@@ -1,0 +1,12 @@
+PASS  1. User A submits Book X -> pending in My Catalogue
+PASS  2. Guest does not see Book X
+PASS  3. User B cannot modify User A's Book X  -> HTTP 404 Book not found.
+PASS  4. Normal user calling an admin endpoint is denied  -> HTTP 403 Only an administrator can do this.
+PASS  5. Admin approves Book X -> publicly visible
+PASS  6. Editing an approved book sends the edit for review; the approved version stays public  -> public title: Book X 1795497377091
+PASS  7. Rejection shows the reason; owner revises and it is pending again  -> Demo: please add a longer description
+PASS     Bonus: owner received a rejection notification
+PASS     Bonus: admin can read the audit log; a normal user cannot
+PASS  8. User A deletes their own book
+
+All 8 test cases passed.

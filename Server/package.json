@@ -1,0 +1,21 @@
+{
+  "name": "bookstore-simple-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/seed.js",
+    "migrate": "node scripts/migrate.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "demo": "node scripts/demo.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.10",
+    "express": "^5.1.0",
+    "mongodb": "^7.9.0",
+    "multer": "^2.5.0"
+  }
+}

@@ -1,0 +1,10 @@
+Copy this folder over your existing "backend" folder (it only contains new/changed files).
+
+DELETE these old files (they belong to the previous in-memory / books.js version):
+  Server/src/fileBookStore.js
+  Server/src/addDemoBooks.js
+  Server/postman/            (old admin/admin token collection)
+  Server/test/admin.test.js
+  Server/test/pagination.test.js
+
+No new npm dependencies were added. Then follow README.md section 1.
